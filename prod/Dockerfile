@@ -1,4 +1,4 @@
-FROM golang:1.13 AS lightwalletd_base
+FROM golang:1.14.2 AS lightwalletd_base
 
 ADD ./lightwalletd /usr/bin/lightwalletd
 ADD ./prod/entrypoint.sh /srv/$LWD_USER/
